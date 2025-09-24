@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+/.windsurf
+/.windsurfrules
+/.windsurfrules.md
+/.mcp
+/.mcpmemory
+/.mcpmemory.json
+/data
+/data/*
+outline.md
