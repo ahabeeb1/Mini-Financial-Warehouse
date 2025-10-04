@@ -39,7 +39,7 @@ CREATE TABLE staging.taxi_zone_lookup (
 
 CREATE TABLE warehouse.dim_taxi_zone (
     zone_key SERIAL PRIMARY KEY,
-    location_id INTEGER,
+    location_lk_id INTEGER,
     borough TEXT,
     zone TEXT,
     service_zone TEXT,
@@ -47,7 +47,7 @@ CREATE TABLE warehouse.dim_taxi_zone (
     valid_to TIMESTAMP,
     is_current BOOLEAN,
     created_at TIMESTAMP DEFAULT NOW()
-)
+);
 
 CREATE TABLE warehouse.dim_vendor (
     vendor_key SERIAL PRIMARY KEY,
@@ -57,7 +57,7 @@ CREATE TABLE warehouse.dim_vendor (
     valid_to TIMESTAMP,
     is_current BOOLEAN,
     created_at TIMESTAMP DEFAULT NOW()
-)
+);
 
 CREATE TABLE warehouse.dim_payment_type (
     payment_type_key SERIAL PRIMARY KEY,
@@ -67,7 +67,7 @@ CREATE TABLE warehouse.dim_payment_type (
     valid_to TIMESTAMP,
     is_current BOOLEAN,
     created_at TIMESTAMP DEFAULT NOW()
-)
+);
 
 CREATE TABLE warehouse.dim_ratecode (
     ratecode_key SERIAL PRIMARY KEY,
@@ -77,7 +77,7 @@ CREATE TABLE warehouse.dim_ratecode (
     valid_to TIMESTAMP,
     is_current BOOLEAN,
     created_at TIMESTAMP DEFAULT NOW()
-)
+);
 
 
 CREATE TABLE warehouse.yellow_tripdata_2023 (
