@@ -5,23 +5,23 @@
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue.svg)](https://www.postgresql.org/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://www.docker.com/)
 [![SCD2](https://img.shields.io/badge/SCD2-Implemented-green.svg)](https://en.wikipedia.org/wiki/Slowly_changing_dimension)
-
+[![Pandas](https://img.shields.io/badge/Pandas-Integrated-orange.svg)](https://pandas.pydata.org/)
 ## Project Overview
 
 A hands-on data warehouse project built with **PostgreSQL** and **SQL**, processing **38.3 million** NYC Yellow Taxi trip records from 2023. Implements **SCD2 (Slowly Changing Dimensions Type 2)** to enable time-travel queries and historical accuracy.
 
 ### Key Features
 - 38.3M trip records loaded and optimized
-- SCD2 implementation for dimension tracking
+- SCD2 implementation in both SQL and Pandas
 - Time-travel queries - Query data as it existed at any point in time
 - Star schema design - 4 dimensions + 1 fact table
 - Batched loading - Handles large datasets efficiently
 - Historical accuracy - Preserves dimension values as they were
+- Pandas integration - Programmatic SCD2 management with Python
 
 ---
 
 ## What is SCD2?
-
 **Slowly Changing Dimension Type 2** tracks historical changes by creating new records when dimension attributes change, preserving complete history.
 
 ### Example: Zone Name Change
