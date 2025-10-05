@@ -44,7 +44,7 @@ docker run --name my-taxi-warehouse -p 5432:5432 \
   -v /path/to/data:/data -d taxi-warehouse
 
 # Connect to database
-docker exec -it my-taxi-warehouse psql -U warehouse_user -d taxi_warehosue
+docker exec -it my-taxi-warehouse psql -U warehouse_user -d taxi_warehouse
 
 # Load data
 \copy staging.taxi_zone_lookup FROM '/path/to/data/taxi_zone_lookup.csv' WITH CSV HEADER;
